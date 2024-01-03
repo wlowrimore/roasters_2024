@@ -1,0 +1,24 @@
+[
+  {
+    "id": "rv01",
+    "name": "Tim Lawrence",
+    "review": "Hands down the best coffee I have ever tasted! The customer service was excellent, and you just can't beat the prices!",
+    "starsURL": "/images/stars.webp",
+    "avatarURL": "/images/avatars/profilePic.webp"
+  },  
+  {
+    "id": "rv03",
+    "name": "Mario Jones",
+    "review": "A Fantastic company, supplying fantastic coffee, and exercising fantastic customer service!",
+    "starsURL": "/images/stars.webp",
+    "avatarURL": "/images/avatars/profilePic.webp"
+  },
+  {
+    "id": "rv02",
+    "name": "Nichole Irving",
+    "review": "As the owner of a small boutique gift shop/coffee bar, I have tried many different suppliers but have never been satisfied.  International Coffee Roasters hit the nail on the head.  Top notch, delicious coffee and a very reasonable price!!!",
+    "starsURL": "/images/stars.webp",
+    "avatarURL": "/images/avatars/profilePic.webp"
+  }
+]
+

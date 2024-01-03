@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cf01",
+    "name": "Robusta Species",
+    "description": ["Used for Espresso Drinks", "Strong & Bitter", "Lower Priced"],
+    "caffeineLevel": "High",
+    "imageURL": "/images/beans/robusta.webp"
+  },
+  {
+    "id": "cf02",
+    "name": "Arabica Species",
+    "description": ["Most Common", "Sweet & Smooth", "Higher Priced"],
+    "caffeineLevel": "Medium High",
+    "imageURL": "/images/beans/arabica.webp"
+  },
+  {
+    "id": "cf03",
+    "name": "Liberica Species",
+    "description": ["Used for Instant Coffees", "Bold & Smokey", "Rare Indonesian", "Phillipines Medium Priced"],
+    "caffeineLevel": "Medium",
+    "imageURL": "/images/beans/liberica.webp"
+  },
+  {
+    "id": "cf04",
+    "name": "Excelsa Species",
+    "description": ["Used for Instant Coffees", "Tart & Fruity", "Southeast Asia", "Lower Priced"],
+    "caffeineLevel": "High",
+    "imageURL": "/images/beans/excelsa.webp"
+  }
+]
