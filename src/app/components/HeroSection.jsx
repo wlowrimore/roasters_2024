@@ -9,7 +9,7 @@ const HeroSection = () => {
         <h2 className='tracking-wide font-semibold text-xl'>Fair Trade. Indigenous Cacao. Right Price.</h2>
         <p className='text-sm font-thin'><b>International Coffee Roasters</b> supports the fair trade market for homegrown cacao beans indigenous to their respective countries.  Because of our love for quality coffee, we&apos;ve invested time, energy, and capital into the farmers who supply the millions of carefully cultivated crops, and have the world&apos;s finest coffee sommeliers on hand to ensure that our beans are the best.</p>
       </div>
-      <div className='w-full h-[14rem]'>
+      <div className='w-full h-[12.6rem]'>
         <Image
           src={Coffee}
           alt='steaming-cup-of-coffee'
@@ -18,7 +18,7 @@ const HeroSection = () => {
           className='md:object-cover md:h-72'
         />
         <button
-          className='w-28 bg-yellow-900 py-1 px-3 rounded-br shadow shadow-yellow-900 text-[#EFCA99] text-lg relative bottom-[14rem] right-2 md:bottom-40 md:left-20 uppercase'
+          className='w-28 bg-yellow-900 py-1 px-3 rounded-br shadow shadow-yellow-900 text-[#EFCA99] text-lg relative bottom-[12.7rem] right-2 md:bottom-40 md:left-20 uppercase'
         >
           Menu
         </button>
