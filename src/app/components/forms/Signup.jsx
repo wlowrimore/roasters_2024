@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Signup = () => {
   return (
     <form className='flex flex-col w-full p-4 bg-yellow-900/60 mb-2'>

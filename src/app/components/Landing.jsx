@@ -1,4 +1,3 @@
-// import CoffeeFacts from "./CoffeeFacts"
 import CTAFeatures from "./CTAFeatures"
 import HeroSection from "./HeroSection"
 import Reviews from "./Reviews"

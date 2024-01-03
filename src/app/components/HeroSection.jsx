@@ -11,6 +11,7 @@ const HeroSection = () => {
       </div>
       <div className='w-full h-[12.6rem]'>
         <Image
+          priority
           src={Coffee}
           alt='steaming-cup-of-coffee'
           width={1000}
