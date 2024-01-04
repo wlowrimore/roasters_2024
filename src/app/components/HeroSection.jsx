@@ -3,7 +3,7 @@ import Coffee from '/public/images/coffee.webp'
 
 const HeroSection = () => {
   return (
-    <>
+    <div className='flex flex-col md:flex-row'>
       <div className='w-full md:h-72 pt-14 pb-4 flex px-4 flex-col bg-yellow-900 text-[#EFCA99]'>
         <h1 className='uppercase tracking-wide font-bold text-4xl leading-8 mb-2 '>International Coffee Roasters</h1>
         <h2 className='tracking-wide font-semibold text-xl leading-6 mb-2'>Fair Trade. Indigenous Cacao. Right Price.</h2>
@@ -19,7 +19,7 @@ const HeroSection = () => {
           height={1000}
           className='md:object-cover md:h-72'
         />
-        <div className='absolute z-10 top-6 left-4 flex flex-col text-yellow-900'>
+        <div className='absolute z-10 top-6 md:top-20 left-4 md:left-14 flex flex-col text-yellow-900'>
           <h3 className='text-lg font-bold'>100&#37; Organic</h3>
           <ul className='list-disc ml-5'>
             <li>Robusta</li>
@@ -29,7 +29,7 @@ const HeroSection = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
