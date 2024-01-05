@@ -24,7 +24,7 @@ const Reviews = () => {
   }, [])
 
   return (
-    <div className='relative flex flex-col py-12 px-4 md:px-12 space-y-8 border-t border-neutral-900/20'>
+    <div className='relative flex flex-col py-12 px-4 md:px-12 space-y-8'>
       {reviews?.map((review) => (
         <div className='w-full md:w-1/2 h-full' key={review.id}>
           <div className='flex w-full'>
@@ -51,8 +51,8 @@ const Reviews = () => {
           </div>
         </div>
       ))}
-      <button className='w-full text-sm italic text-end'>...more reviews</button>
-      <div className='hidden md:block md:absolute top-6 right-12 z-10'>
+      <button className='w-full text-sm'>Load More Reviews</button>
+      {/* <div className='hidden md:block md:absolute top-4 right-12 z-10'>
         <Image
           src={Coffee}
           alt='cup of coffee and coffee beans'
@@ -60,7 +60,8 @@ const Reviews = () => {
           height={500}
           className='w-[40rem] rounded shadow-lg shadow-neutral-700'
         />
-      </div>
+        <button className='absolute top-40 left-28 bg-yellow-500/20 text-2xl py-2 px-6 rounded border border-neutral-900/70 shadow-lg shadow-neutral-700'>Buy Now</button>
+      </div> */}
     </div>
   )
 }

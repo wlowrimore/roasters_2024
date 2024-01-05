@@ -3,7 +3,7 @@ import React from 'react'
 
 const CTAFeatures = () => {
   return (
-    <div className='py-8 px-4 lg:mb-0 bg-neutral-200'>
+    <div className='py-8 px-4 lg:mb-0 bg-gradient-to-b from-neutral-200 to-white'>
       <div className='grid grid-cols-2 lg:flex'>
         <div className='flex w-full justify-center items-center'>
           <Image
