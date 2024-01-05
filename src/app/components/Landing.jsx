@@ -9,8 +9,8 @@ const Landing = () => {
     <main className='w-full flex flex-col'>
       <HeroSection />
       <CTAFeatures />
-      <Reviews />
       <Signup />
+      <Reviews />
     </main>
   )
 }
