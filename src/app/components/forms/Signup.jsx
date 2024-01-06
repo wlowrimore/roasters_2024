@@ -4,7 +4,7 @@ import CoffeeCrop from '/public/images/test-images/coffee_crop_columbia.webp'
 
 const Signup = () => {
   return (
-    <div className='relative mx-12 mt-2 mb-2'>
+    <div className='relative md:mx-4 lg:mx-16 md:mt-[0.05rem] mb-2'>
       <div className='flex mb-2 w-full bg-neutral-900/90'>
         <Image
           src={CoffeeCrop}
@@ -21,14 +21,14 @@ const Signup = () => {
           <p>receive <span className='text-yellow-300 font-bold'>15&#37; off</span> your first order!</p>
         </div>
         <div className='text-emerald-100 flex-col md:flex-row space-y-3'>
-          <div className='lg:flex lg:gap-2'>
-            <div className='flex flex-col'>
+          <div className='md:flex md:gap-2'>
+            <div className='flex flex-col w-full'>
               <label htmlFor='first-name'>First Name</label>
-              <input type='text' name='first-name' className='border border-neutral-900/20 text-black outline-none max-w-[12.7rem] px-1' required />
+              <input type='text' name='first-name' className='border border-neutral-900/20 text-black outline-none px-1 w-full' required />
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <label htmlFor='last-name'>Last Name</label>
-              <input type='text' name='last-name' className='border border-neutral-900/20 text-black outline-none max-w-[12.7rem] px-1' required />
+              <input type='text' name='last-name' className='border border-neutral-900/20 text-black outline-none px-1 w-full' required />
             </div>
           </div>
           <div className='flex flex-col'>

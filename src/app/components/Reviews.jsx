@@ -1,67 +1,93 @@
 'use client'
 
-import { useState, useEffect } from "react"
 import Image from "next/image"
-import Coffee from '/public/images/coffee.webp'
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
+import MountainManImg from '/public/images/avatars/smile-man-mountain.webp'
+import ShopLadyImg from '/public/images/avatars/smile-woman-shop.webp'
+import LadyBunImg from '/public/images/avatars/smile-woman-bun.webp'
+import Stars from '/public/images/stars.webp'
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState()
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/json/reviews.json')
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`)
-        }
-        const data = await res.json()
-        setReviews(data)
-      } catch (error) {
-        console.error("Error fetching JSON data", error)
-      }
-    }
-    fetchData()
-  }, [])
-
   return (
-    <div className='relative flex flex-col py-12 px-4 md:px-12 space-y-8'>
-      {reviews?.map((review) => (
-        <div className='w-full md:w-1/2 h-full' key={review.id}>
-          <div className='flex w-full'>
-            <div className='flex flex-col mr-4'>
-              <Image
-                src={review.avatarURL}
-                alt={review.name}
-                width={500}
-                height={500}
-                className='w-16'
-              />
-            </div>
-            <div className='flex flex-col w-full'>
-              <Image
-                src={review.starsURL}
-                alt="five-star-rating"
-                width={500}
-                height={500}
-                className='w-20'
-              />
-              <p className='text-xs lg:text-lg lg:tracking-normal tracking-wider'>{review.review}</p>
-              <p className='text-xs font-semibold italic'>-&nbsp;{review.name}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-      <button className='w-full text-sm'>Load More Reviews</button>
-      {/* <div className='hidden md:block md:absolute top-4 right-12 z-10'>
+    <div className='space-y-4 p-4 lg:space-y-16 lg:mx-12 lg:mb-20'>
+      <div className='flex space-x-2 lg:space-x-6 items-start lg:bg-emerald-100/50 lg:py-4 lg:px-4 lg:rounded'>
         <Image
-          src={Coffee}
-          alt='cup of coffee and coffee beans'
+          src={MountainManImg}
+          alt='man smiling in front of mountain'
           width={500}
           height={500}
-          className='w-[40rem] rounded shadow-lg shadow-neutral-700'
+          className='w-14 lg:w-72 object-contain rounded-full lg:rounded-lg lg:shadow-lg lg:shadow-neutral-300'
         />
-        <button className='absolute top-40 left-28 bg-yellow-500/20 text-2xl py-2 px-6 rounded border border-neutral-900/70 shadow-lg shadow-neutral-700'>Buy Now</button>
-      </div> */}
+        <div className='flex flex-col space-y-1'>
+          <Image
+            src={Stars}
+            alt='5-star rating'
+            width={500}
+            height={500}
+            className='w-20 lg:hidden'
+          />
+          <div>
+            <div className='hidden lg:flex text-6xl opacity-80'><RiDoubleQuotesL /></div>
+            <p className='text-xs lg:text-2xl lg:px-14 tracking-wide'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span className='text-[0.6rem] lg:text-sm font-semibold lg:font-normal ml-2'>- Tim Lawrence</span>
+            </p>
+            <div className='hidden lg:flex text-6xl opacity-80 justify-end'><RiDoubleQuotesR /></div>
+          </div>
+        </div>
+      </div>
+
+      <div className='flex flex-row lg:flex-row-reverse space-x-2 lg:space-x-4 items-start lg:mb-20 lg:bg-emerald-100/50 lg:py-4 lg:px-4 lg:rounded'>
+        <Image
+          src={ShopLadyImg}
+          alt='lady smiling in shop'
+          width={500}
+          height={500}
+          className='w-14 lg:w-72 object-contain rounded-full lg:rounded-lg lg:shadow-lg lg:shadow-neutral-300'
+        />
+        <div className='flex flex-col space-y-1'>
+          <Image
+            src={Stars}
+            alt='5-star rating'
+            width={500}
+            height={500}
+            className='w-20 lg:hidden'
+          />
+          <div className=''>
+            <div className='hidden lg:flex text-6xl opacity-80'><RiDoubleQuotesL /></div>
+            <p className='text-xs lg:text-2xl lg:px-14 tracking-wide'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span className='text-[0.6rem] lg:text-sm font-semibold lg:font-normalml-2'>- Nichole Irving</span>
+            </p>
+            <div className='hidden lg:flex text-6xl opacity-80 justify-end'><RiDoubleQuotesR /></div>
+          </div>
+        </div>
+      </div>
+      <div className='flex space-x-2 lg:space-x-6 lg:mb-20 items-start lg:bg-emerald-100/50 lg:py-4 lg:px-4 lg:rounded'>
+        <Image
+          src={LadyBunImg}
+          alt='man smiling in front of mountain'
+          width={500}
+          height={500}
+          className='w-14 lg:w-72 object-contain rounded-full lg:rounded-lg lg:shadow-lg lg:shadow-neutral-300'
+        />
+        <div className='flex flex-col space-y-1'>
+          <Image
+            src={Stars}
+            alt='5-star rating'
+            width={500}
+            height={500}
+            className='w-20 lg:hidden'
+          />
+          <div>
+            <div className='hidden lg:flex text-6xl opacity-80'><RiDoubleQuotesL /></div>
+            <p className='text-xs lg:text-2xl lg:px-14 tracking-wide'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span className='text-[0.6rem] lg:text-sm font-semibold lg:font-normal ml-2'>- Maysa River</span>
+            </p>
+            <div className='hidden lg:flex text-6xl opacity-80 justify-end'><RiDoubleQuotesR /></div>
+          </div>
+        </div>
+      </div>
+      <p className='lg:hidden text-[0.7rem] text-end '>Load More Comments...</p>
     </div>
   )
 }
