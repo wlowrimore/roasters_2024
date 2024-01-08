@@ -6,7 +6,7 @@ import Signup from "./forms/Signup"
 
 const Landing = () => {
   return (
-    <main className='w-full flex flex-col pt-8'>
+    <main className='w-full flex flex-col lg:pt-10'>
       <HeroSection />
       {/* <CTAFeatures /> */}
       <Signup />

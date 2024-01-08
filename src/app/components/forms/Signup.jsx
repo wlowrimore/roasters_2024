@@ -11,13 +11,13 @@ const Signup = () => {
           alt='columbian coffee crop'
           widht={500}
           height={500}
-          className='h-[19.2rem] object-cover w-full opacity-30'
+          className='h-[24rem] md:h-[19.2rem] lg:h-[21rem] object-cover w-full opacity-30'
         />
       </div>
       {/* <div className='absolute left-32'><CTAFeatures /></div> */}
-      <form className='absolute top-0 right-0 h-full flex flex-col w-full lg:w-1/3 bg-blue-50/20 p-4 mb-2'>
+      <form className='absolute top-0 right-0 h-full flex flex-col w-full lg:w-[34%] bg-blue-50/20 p-6 mb-2'>
         <div className='text-emerald-100 leading-tight mb-4'>
-          <h3 className='text-2xl font-semibold tracking-wider'>Sign Up Today</h3>
+          <h3 className='text-2xl font-semibold tracking-wider'>Sign Our Guest Registar</h3>
           <p>receive <span className='text-yellow-300 font-bold'>15&#37; off</span> your first order!</p>
         </div>
         <div className='text-emerald-100 flex-col md:flex-row space-y-3'>
@@ -39,10 +39,16 @@ const Signup = () => {
           <input type='checkbox' name='age-check' />
           <label htmlFor='age-check'>I am at least 18 years of age.</label>
         </div> */}
-          <button className='w-full py-1 px-4 text-neutral-900 bg-emerald-400/70 rounded'>Sign Me Up</button>
+          <button className='w-full py-1 px-4 text-neutral-900 bg-emerald-400/70 rounded'>I&apos;ve Signed!</button>
         </div>
-        <em className='text-emerald-100 text-xs py-4'>&dagger;&nbsp;We will never share or sell your information.</em>
+        <em className='text-emerald-100 text-xs py-4 xl:mt-4'>&dagger;&nbsp;We will never share or sell your information.</em>
       </form>
+      <div className='w-full hidden lg:flex flex-col items-center p-4 absolute lg:right-36 xl:right-44 lg:top-16 text-2xl text-white'>
+        <p className='w-1/2'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
+        <div className='flex justify-center'>
+          <button className='w-fit lg:mt-6 py-1 px-6 text-xl bg-yellow-800 rounded'>Get Started</button>
+        </div>
+      </div>
     </div>
   )
 }

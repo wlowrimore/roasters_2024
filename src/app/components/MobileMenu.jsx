@@ -46,7 +46,7 @@ const MobileMenu = () => {
 
       {/* large screens navigation */}
       <section>
-        <nav className='hidden lg:block fixed top-1 lg:left-0 xl:left-24'>
+        <nav className='hidden lg:block fixed top-2 lg:left-0 xl:left-24'>
           <ul className='flex items-center w-full h-[2rem] mx-12 uppercase'>
             <li><Link href='#' className='py-2 px-4'>ICR</Link></li>
             <li><Link href='#' className='py-2 px-4'>Pricing</Link></li>
