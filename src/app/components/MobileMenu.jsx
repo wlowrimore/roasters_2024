@@ -19,7 +19,7 @@ const MobileMenu = () => {
         className='lg:hidden'>
         <button
           onClick={handleClick}
-          className='w-28 bg-yellow-700 py-1 px-3 rounded-br-lg shadow shadow-yellow-900 text-[#EFCA99] text-lg absolute z-10 top-0 left-0 uppercase'
+          className='w-28 bg-yellow-800 py-1 px-3 rounded-br-lg shadow shadow-yellow-900 text-[#EFCA99] text-lg absolute z-10 top-0 left-0 uppercase'
         >
           Menu
         </button>

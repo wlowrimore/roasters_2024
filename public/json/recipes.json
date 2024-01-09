@@ -1,0 +1,23 @@
+[
+  {
+    "id": "rec01",
+    "name": "Macciato",
+    "desc": "The caffè macchiato has the highest ratio of espresso to milk of any drink made with those ingredients. The intent is that the milk moderates, rather than overwhelms, the taste of the coffee while adding a touch of sweetness.",
+    "imgURL": "/images/macchiato.webp",
+    "steps": ["1 shot espresso", "1-2 tbsp steamed milk"]
+  },
+  {
+    "id": "rec02",
+    "name": "Iced Coffee",
+    "desc": "It is recommended to add your cream and sweetener when brewing the coffee.  Then, allow the coffee to cool and finish by serving over ice.",
+    "imgURL": "/images/icedCoffee.webp",
+    "steps": ["8 oz. of drip coffee", "Cream and Sweetener"]
+  },
+  {
+    "id": "rec03",
+    "name": "Affogato",
+    "desc": "The Affogato is more traditionally known as 'affogato al caffè' which translates to 'drowned in coffee'.  It is considered an Italian dessert consisting of a scoop of vanilla ice cream, or gelato, and drownded in a shot of expresso.",
+    "imgURL": "/images/affogato.webp",
+    "steps": ["1 shot espresso", "1 scoop of vanilla ice cream"]
+  }
+]
