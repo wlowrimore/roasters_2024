@@ -50,7 +50,7 @@ const Recipes = () => {
 
       <div className='hidden md:flex px-4 lg:px-16 w-full gap-4'>
         {recipes?.map((recipe) => (
-          <div key={recipe.id} className='bg-yellow-900/80 text-white p-4 w-[15rem] lg:w-[22rem] xl:w-[24rem] rounded'>
+          <div key={recipe.id} className='bg-yellow-900/80 text-white p-4 w-[15rem] lg:w-[22rem] xl:w-[24rem] 2xl:w-[32rem] rounded'>
             <h1 className='text-xl tracking-wide font-semibold'>{recipe.name}</h1>
             <div id='card-image' className='flex flex-col py-2'>
               <Image
@@ -58,11 +58,11 @@ const Recipes = () => {
                 alt={recipe.name}
                 width={500}
                 height={500}
-                className='w-52 lg:w-64 xl:w-80 xl:pl-2 rounded mb-4'
+                className='w-52 lg:w-64 xl:w-80 2xl:w-full 2xl:pl-0 xl:pl-2 rounded mb-4'
               />
               {recipe.steps?.map((step, index) => (
                 <div key={index}>
-                  <ul className='list-disc pl-6 pr-2 text-sm tracking-wider'>
+                  <ul className='list-disc pl-4 pr-2 text-sm tracking-wider'>
                     <li>{step}</li>
                   </ul>
                 </div>
@@ -74,7 +74,7 @@ const Recipes = () => {
           </div>
         ))}
       </div>
-      <Link href='#'><p className='text-sm text-yellow-900 italic text-center mt-2 mb-4 px-4'>Click here or more recipes.</p></Link>
+      <Link href='#'><p className='text-sm text-yellow-900 italic text-center my-4 px-4'>Click here or more recipes.</p></Link>
     </>
   )
 }

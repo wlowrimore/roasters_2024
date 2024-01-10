@@ -3,7 +3,7 @@ import SmilingCoffee from '/public/images/test-images/smiling_lady_drinking_coff
 
 const HeroSection = () => {
   return (
-    <div className='flex flex-col md:flex-row md:mx-4 lg:mb-1 lg:mt-6'>
+    <div className='flex flex-col md:flex-row md:mx-4 lg:mb-1'>
       <div className='w-full md:h-72 lg:h-[22rem] pt-14 xl:pt-0 pb-4 flex px-4 lg:px-12 flex-col justify-center'>
         <h1 className='uppercase tracking-wide font-bold text-neutral-600 text-4xl lg:text-4xl leading-8 mb-2 lg:mb-0 '>International Coffee Roasters</h1>
         <h2 className='tracking-wide font-semibold text-neutral-600 text-xl lg:text-2xl leading-6 mb-2'>Fair Trade. Indigenous Cacao. Right Price.</h2>

@@ -1,11 +1,25 @@
 'use client'
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const MobileMenu = () => {
+  const [isScrolling, setIsScrolling] = useState(false)
   const [isToggled, setIsToggled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setIsScrolling(true)
+    } else {
+      setIsScrolling(false)
+    }
+  }
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -24,19 +38,27 @@ const MobileMenu = () => {
           Menu
         </button>
         {isOpen ? (
-          <div className='w-full h-[32rem] absolute top-0 z-20 bg-gradient-to-b from-yellow-900 to-yellow-800 shadow-xl shadow-yellow-900'>
+          <div className='w-full h-[102rem] absolute top-0 z-20 bg-neutral-900/95'>
             <button onClick={handleClick} className='bg-yellow-700 text-[#efca99] text-lg text-start py-1 px-7 uppercase rounded-br-lg'>Close</button>
-            <div className='text-[#efca99] px-5 space-y-2 my-4'>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Home</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Our Story</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>About Our Cacao</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Roasting Options</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Price Guide</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Fun Facts</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>FAQ</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Contact</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Privacy Policy</p></Link>
-              <Link href='#'><p className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Terms & Conditions</p></Link>
+            <div className='text-[#efca99] px-5 mt-6'>
+              <nav className='flex flex-col gap-4'>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Home</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Our Story</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>About Our Cacao</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Roasting Options</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Price Guide</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Fun Facts</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>FAQ</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Contact</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Privacy Policy</p></Link>
+                <Link href='#'><p onClick={(e) => setIsOpen(false)} className='active:bg-yellow-900/90 w-[13rem] rounded-r-lg rounded-l-md px-2 py-1'>Terms & Conditions</p></Link>
+              </nav>
+            </div>
+            <div className='w-full flex flex-col items-center p-4 mt-6 text-lg text-white'>
+              <p className='md:w-1/2'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
+              <div className='flex justify-center'>
+                <button className='w-fit mt-4 py-1 px-3 text-lg bg-yellow-800 rounded'>Get Started</button>
+              </div>
             </div>
           </div>
         ) : (
@@ -46,8 +68,8 @@ const MobileMenu = () => {
 
       {/* large screens navigation */}
       <section>
-        <nav className='hidden lg:block fixed top-2 lg:left-0 xl:left-24'>
-          <ul className='flex items-center w-full h-[2rem] mx-12 uppercase'>
+        <nav className='hidden lg:block fixed z-50 top-0 py-2 lg:left-0 xl:left-24 2xl:ml-52 2xl:py-4 2xl:text-xl'>
+          <ul className={isScrolling ? 'transform flex items-center rounded-br-xl rounded-bl-xl lg:w-fit lg:pt-1 lg:bg-neutral-950/80 transition duration-300 text-white  h-[3rem] lg:ml-16 lg:mt-[-0.7rem] uppercase' : 'flex items-center w-full h-[2rem] mx-12 uppercase'}>
             <li><Link href='#' className='py-2 px-4'>ICR</Link></li>
             <li><Link href='#' className='py-2 px-4'>Pricing</Link></li>
             <li><Link href='#' className='py-2 px-4'>Process</Link></li>
