@@ -1,7 +1,9 @@
 'use client'
 
-import Link from "next/link";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image"
+import Logo from '/public/images/logo/mainLogo.webp'
 
 const MobileMenu = () => {
   const [isScrolling, setIsScrolling] = useState(false)
@@ -57,7 +59,7 @@ const MobileMenu = () => {
             <div className='w-full flex flex-col items-center p-4 mt-6 text-lg text-white'>
               <p className='md:w-1/2'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
               <div className='flex justify-center'>
-                <button className='w-fit mt-4 py-1 px-3 text-lg bg-yellow-800 rounded'>Get Started</button>
+                <button onClick={(e) => setIsOpen(false)} className='w-fit mt-4 py-1 px-3 text-lg bg-yellow-800 rounded'>Get Started</button>
               </div>
             </div>
           </div>
@@ -70,11 +72,21 @@ const MobileMenu = () => {
       <section>
         <nav className='hidden lg:block fixed z-50 top-0 py-2 lg:left-0 xl:left-24 2xl:ml-52 2xl:py-4 2xl:text-xl'>
           <ul className={isScrolling ? 'transform flex items-center rounded-br-xl rounded-bl-xl lg:w-fit lg:pt-1 lg:bg-neutral-950/80 transition duration-300 text-white  h-[3rem] lg:ml-16 lg:mt-[-0.7rem] uppercase' : 'flex items-center w-full h-[2rem] mx-12 uppercase'}>
-            <li><Link href='#' className='py-2 px-4'>ICR</Link></li>
-            <li><Link href='#' className='py-2 px-4'>Pricing</Link></li>
-            <li><Link href='#' className='py-2 px-4'>Process</Link></li>
-            <li><Link href='#' className='py-2 px-4'>Our Story</Link></li>
-            <li><Link href='#' className='py-2 px-4'>Contact</Link></li>
+            <li>
+              <Link href='#' className='py-2 px-4'>
+                <Image
+                  src={Logo}
+                  alt='company logo'
+                  width={1000}
+                  height={1000}
+                  className='w-10 pb-1 pl-1'
+                />
+              </Link>
+            </li>
+            <li><Link href='#' className='py-2 px-4 transition hover:opacity-40 duration-300'>Pricing</Link></li>
+            <li><Link href='#' className='py-2 px-4 transition hover:opacity-40 duration-300'>Process</Link></li>
+            <li><Link href='#' className='py-2 px-4 transition hover:opacity-40 duration-300'>Our Story</Link></li>
+            <li><Link href='#' className='py-2 px-4 transition hover:opacity-40 duration-300'>Contact</Link></li>
           </ul>
         </nav>
       </section>
