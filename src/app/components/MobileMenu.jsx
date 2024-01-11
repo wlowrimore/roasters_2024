@@ -71,7 +71,7 @@ const MobileMenu = () => {
       {/* large screens navigation */}
       <section>
         <nav className='hidden lg:block fixed z-50 top-0 py-2 lg:left-0 xl:left-24 2xl:ml-52 2xl:py-4 2xl:text-xl'>
-          <ul className={isScrolling ? 'transform flex items-center rounded-br-xl rounded-bl-xl lg:w-fit lg:pt-1 lg:bg-neutral-950/80 transition duration-300 text-white  h-[3rem] lg:ml-16 lg:mt-[-0.7rem] uppercase' : 'flex items-center w-full h-[2rem] mx-12 uppercase'}>
+          <ul className={isScrolling ? 'transform flex items-center rounded-br-xl rounded-bl-xl lg:w-fit lg:pt-1 lg:bg-neutral-950/80 text-white h-[3rem] lg:ml-16 lg:mt-[-0.7rem] uppercase' : 'flex items-center w-full h-[2rem] mx-12 uppercase'}>
             <li>
               <Link href='#' className='py-2 px-4'>
                 <Image

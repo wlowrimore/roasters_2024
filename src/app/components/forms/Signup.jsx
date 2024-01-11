@@ -75,14 +75,14 @@ const Signup = () => {
               required
             />
           </div>
-          <button className='w-full py-1 px-4 text-lg font-semibold text-neutral-900 bg-emerald-400/70 rounded'>Get my 15&#37; off!</button>
+          <button className='w-full py-1 px-4 text-lg font-semibold text-neutral-900 bg-emerald-400/70 rounded hover:bg-emerald-400/50 hover:text-neutral-900/70 duration-300'>Get my 15&#37; off!</button>
         </div>
         <em className='text-emerald-100 text-xs py-4 xl:mt-4'>&dagger;&nbsp;We will never share or sell your information.</em>
       </form>
       <div className='w-full hidden lg:flex flex-col items-center p-4 absolute lg:right-36 xl:right-44 2xl:right-52 lg:top-16 text-2xl text-white'>
         <p className='w-1/2'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
         <div className='flex justify-center'>
-          <button className='w-fit lg:mt-6 lg:mr-8 py-1 px-6 text-xl bg-yellow-800 rounded outline-none'>Get Started</button>
+          <button className='w-fit lg:mt-6 lg:mr-8 py-1 px-6 text-xl bg-yellow-800 rounded outline-none hover:opacity-70 duration-300'>Get Started</button>
         </div>
       </div>
     </div>

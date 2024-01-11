@@ -74,7 +74,9 @@ const Recipes = () => {
           </div>
         ))}
       </div>
-      <Link href='#'><p className='text-sm text-yellow-900 italic text-center my-4 px-4'>Click here or more recipes.</p></Link>
+      <div className='flex justify-center'>
+        <Link href='#'><p className='2xl:text-xl text-sm text-yellow-900 italic text-center my-4 px-4 hover:underline hover:text-emerald-700 w-fit'>Click here or more recipes.</p></Link>
+      </div>
     </>
   )
 }
