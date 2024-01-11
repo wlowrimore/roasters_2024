@@ -13,7 +13,13 @@ const Signup = () => {
     e.preventDefault()
 
     const formData = { firstName, lastName, email }
-    alert(`You entered the following information, First Name: ${formData.firstName}, Last Name: ${formData.lastName}, Email: ${formData.email}`)
+    alert(`The following information has successfully been stored to your computer's local storage: First Name: ${formData.firstName}, Last Name: ${formData.lastName}, Email: ${formData.email}`)
+
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem("First Name", firstName);
+      localStorage.setItem('Last Name', lastName);
+      localStorage.setItem('Email', email);
+    }
 
     setFirstName('')
     setLastName('')
