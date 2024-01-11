@@ -79,8 +79,8 @@ const Signup = () => {
         </div>
         <em className='text-emerald-100 text-xs py-4 xl:mt-4'>&dagger;&nbsp;We will never share or sell your information.</em>
       </form>
-      <div className='w-full hidden lg:flex flex-col items-center p-4 absolute lg:right-36 xl:right-44 2xl:right-52 lg:top-16 text-2xl text-white'>
-        <p className='w-1/2'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
+      <div className='w-full lg:w-[65%] hidden lg:flex flex-col items-center p-4 absolute lg:right-[33%] xl:right-[34%] 2xl:right-[34%] lg:top-20 text-2xl text-white'>
+        <p className='w-1/2 lg:w-full 2xl:w-3/4'>Don&apos;t know where to begin?  Let us help.  A short questionaire will guide you from the crop to the cup.</p>
         <div className='flex justify-center'>
           <button className='w-fit lg:mt-6 lg:mr-8 py-1 px-6 text-xl bg-yellow-800 rounded outline-none hover:opacity-70 duration-300'>Get Started</button>
         </div>

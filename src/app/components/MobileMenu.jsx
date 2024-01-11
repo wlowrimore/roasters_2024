@@ -40,7 +40,7 @@ const MobileMenu = () => {
           Menu
         </button>
         {isOpen ? (
-          <div className='w-full h-[102rem] absolute top-0 z-20 bg-neutral-900/95'>
+          <div className='w-full h-[140rem] absolute top-0 z-20 bg-neutral-900/95'>
             <button onClick={handleClick} className='bg-yellow-700 text-[#efca99] text-lg text-start py-1 px-7 uppercase rounded-br-lg'>Close</button>
             <div className='text-[#efca99] px-5 mt-6'>
               <nav className='flex flex-col gap-4'>

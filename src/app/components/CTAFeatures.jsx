@@ -5,7 +5,7 @@ const CTAFeatures = () => {
   return (
     // <div className='py-8 px-4 lg:mb-0 bg-gradient-to-b from-neutral-200 to-white'>
     // <div className='grid grid-cols-2 lg:flex'>
-    <div className='space-y-4 my-8 md:w-3/4 md:mx-auto'>
+    <div className='space-y-4 my-8 md:mx-4 lg:mx-16'>
       <div className='flex gap-6 lg:gap-11 items-center mr-4 p-2 bg-gradient-to-r from-green-900 to-transparent rounded-tl-full rounded-bl-full'>
         <Image
           src='/images/ctafeatures/free-shipping.webp'
