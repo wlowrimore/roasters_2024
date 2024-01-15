@@ -8,6 +8,7 @@ import ShopLadyImg from '/public/images/avatars/smile-woman-shop.webp'
 import LadyBunImg from '/public/images/avatars/smile-woman-bun.webp'
 import Stars from '/public/images/stars.webp'
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 const Reviews = () => {
   return (
@@ -94,10 +95,13 @@ const Reviews = () => {
               </div>
             </div>
           </div>
+          <div className='lg:hidden text-[0.7rem] text-end '>
+            <Link href='#'><p>Load More Comments...</p></Link>
+          </div>
+          <div className='hidden lg:flex justify-end w-full mb-12'>
+            <Link href='#'><p className='hover:text-green-800 hover:underline'>Load More Comments</p></Link>
+          </div>
         </Fade>
-        <div>
-          <p className='lg:hidden text-[0.7rem] text-end '>Load More Comments...</p>
-        </div>
       </div>
     </>
   )
