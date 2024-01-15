@@ -18,7 +18,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <div className='flex flex-col md:flex-row md:mx-4 lg:mb-1'>
+    <div className='flex flex-col mt-12 mb-2 md:flex-row md:mx-4 lg:mb-1'>
       {!isLoading ? (<Loader />) : (
         <>
           <div className='w-full md:h-72 lg:h-[22rem] pt-14 xl:pt-0 pb-4 flex px-4 lg:px-12 flex-col justify-center'>
