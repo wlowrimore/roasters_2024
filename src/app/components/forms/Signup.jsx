@@ -38,12 +38,12 @@ const Signup = () => {
         />
       </div>
       <form onSubmit={handleFormSubmit} className='absolute top-0 right-0 h-full flex flex-col w-full lg:w-[34%] bg-blue-50/20 p-6 mb-2'>
-        <div className='text-emerald-100 leading-tight mb-4'>
+        <div className='text-emerald-100 leading-tight mb-4 space-y-3'>
           <h3 className='text-2xl font-semibold tracking-wider'>Sign Our Guest Book</h3>
           <p>receive <span className='text-yellow-300 font-bold'>15&#37; off</span> your first order!</p>
         </div>
         <div className='text-emerald-100 flex-col md:flex-row space-y-3'>
-          <div className='md:flex md:gap-2'>
+          <div className='md:flex md:gap-2 space-y-3 md:space-y-0'>
             <div className='flex flex-col w-full'>
               <label htmlFor='first-name'>First Name</label>
               <input
