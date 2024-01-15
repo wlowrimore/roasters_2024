@@ -30,6 +30,7 @@ const Signup = () => {
     <div className='relative md:mx-4 lg:mx-16 md:mt-[0.05rem] lg:mb-12'>
       <div className='flex mb-2 w-full bg-neutral-900/90'>
         <Image
+          priority
           src={CoffeeCrop}
           alt='columbian coffee crop'
           widht={500}
