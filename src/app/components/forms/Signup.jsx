@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from "next/image"
 import CoffeeCrop from '/public/images/test-images/coffee_crop_columbia.webp'
 
@@ -14,6 +14,8 @@ const Signup = () => {
 
     const formData = { firstName, lastName, email }
     alert(`The following information has successfully been stored to your computer's local storage: First Name: ${formData.firstName}, Last Name: ${formData.lastName}, Email: ${formData.email}`)
+
+    console.log("Information captured from main guest book:", formData)
 
     if (typeof window !== 'undefined' && window.localStorage) {
       localStorage.setItem("First Name", firstName);

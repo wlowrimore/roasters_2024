@@ -16,7 +16,6 @@ const Recipes = () => {
           throw new Error(`HTTP error! Status: ${res.status}`)
         }
         const data = await res.json()
-        console.log(data)
         setRecipes(data)
       } catch (error) {
         console.error('Error fetching JSON data:', error)

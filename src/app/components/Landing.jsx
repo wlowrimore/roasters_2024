@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection"
 import Reviews from "./Reviews"
 import Signup from "./forms/Signup"
 import Recipes from "./recipes/Recipes"
+import SecondarySignup from "./forms/SecondarySignup"
 
 
 const Landing = () => {
@@ -14,6 +15,7 @@ const Landing = () => {
       <Recipes />
       <CTAFeatures />
       <Reviews />
+      <SecondarySignup />
     </main>
   )
 }
